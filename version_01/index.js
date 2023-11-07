@@ -19,5 +19,6 @@ password.addEventListener("input", () => {
     message.style.color = "#ff5";
   } else if (password.value.length >= 8) {
     strength.innerHTML = "strong";
+    password.style.borderColor = "#00ff00";
   }
 });
