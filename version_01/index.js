@@ -8,4 +8,7 @@ password.addEventListener("input", () => {
   } else {
     message.style.display = "none";
   }
+  if (password.value.length < 4) {
+    strength.innerHTML = "weak";
+  }
 });
