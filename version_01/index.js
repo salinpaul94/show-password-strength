@@ -10,6 +10,7 @@ password.addEventListener("input", () => {
   }
   if (password.value.length < 4) {
     strength.innerHTML = "weak";
+    password.style.borderColor = "#ff5925";
   } else if (password.value.length >=4 && password.value.length < 8) {
     strength.innerHTML = "medium";
   } else if (password.value.length >= 8) {
