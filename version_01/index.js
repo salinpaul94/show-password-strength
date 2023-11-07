@@ -7,11 +7,13 @@ password.addEventListener("input", () => {
     message.style.display = "block";
   } else {
     message.style.display = "none";
+    // password.style.borderColor = "#cccccc";
   }
   if (password.value.length < 4) {
     strength.innerHTML = "weak";
     password.style.borderColor = "#ff5925";
-  } else if (password.value.length >=4 && password.value.length < 8) {
+    message.style.color = "#ff5925";
+  } else if (password.value.length >= 4 && password.value.length < 8) {
     strength.innerHTML = "medium";
   } else if (password.value.length >= 8) {
     strength.innerHTML = "strong";
